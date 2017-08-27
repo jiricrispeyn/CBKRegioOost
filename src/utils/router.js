@@ -10,6 +10,7 @@ import PlayersDetail from '../screens/PlayersDetail';
 import Leagues from '../screens/Leagues';
 import LeaguesDetail from '../screens/LeaguesDetail';
 import Trophies from '../screens/Trophies';
+import TrophiesDetail from '../screens/TrophiesDetail';
 
 const stackNavigatorConfig = {
   headerBackTitle: null,
@@ -121,6 +122,13 @@ const TrophiesTab = StackNavigator({
     navigationOptions: {
       title: 'Beker'
     }
+  },
+  TrophiesDetail: {
+    screen: TrophiesDetail,
+    path: '/:id',
+    navigationOptions: ({ navigation }) => ({
+      title: navigation.state.params.text
+    })
   }
 }, {
   navigationOptions: stackNavigatorConfig

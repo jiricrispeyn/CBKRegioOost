@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import { StyleSheet } from 'react-native';
-import { Container, Content } from 'native-base';
-import TrophiesList from '../components/TrophiesList';
+import { Container, Content, Text } from 'native-base';
 
-class Trophies extends Component {
+class TrophiesDetail extends Component {
   state = {  }
   render() {
     return (
       <Container style={styles.container}>
         <Content>
-          <TrophiesList navigation={this.props.navigation} />
+          <Text>TrophiesDetail</Text>
         </Content>
       </Container>
     );
@@ -22,4 +21,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Trophies;
+export default TrophiesDetail;

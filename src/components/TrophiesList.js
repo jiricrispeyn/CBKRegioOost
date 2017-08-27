@@ -18,7 +18,7 @@ class TrophiesList extends Component {
     return (
       <List dataArray={this.state.trophies}
         renderRow={item => 
-          <ListItem button onPress={() => {this.goToDetail(item.id)}} style={styles.listItem}>
+          <ListItem button onPress={() => {this.goToDetail(item.id, item.text)}} style={styles.listItem}>
             <Text style={styles.itemText}>{item.upperCaseText}</Text>
           </ListItem>
         }>
@@ -41,8 +41,8 @@ class TrophiesList extends Component {
       err => console.log(err)
     );
   }
-  goToDetail(trophy) {
-    console.log(trophy);
+  goToDetail(id, text) {
+    this.props.navigation.navigate('TrophiesDetail', {id: id, text: text});    
   }
 }
 
