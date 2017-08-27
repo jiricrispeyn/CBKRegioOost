@@ -6,7 +6,7 @@ class LeaguesDetail extends Component {
   state = {  }
   render() {
     return (
-      <Container>
+      <Container style={styles.container}>
         <Content padder>
           <Text>LeaguesDetail</Text>
         </Content>
@@ -16,7 +16,9 @@ class LeaguesDetail extends Component {
 }
 
 const styles = StyleSheet.create({
-
+  container: {
+    backgroundColor: '#fff'
+  }
 });
 
 export default LeaguesDetail;
