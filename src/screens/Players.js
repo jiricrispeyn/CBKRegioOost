@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet } from 'react-native';
-import { Container, Tabs, Tab, Content, Text } from 'native-base';
+import { Container, Tabs, Tab, Content } from 'native-base';
 import PlayersList from '../components/PlayersList';
 import PlayerRankingsList from '../components/PlayerRankingsList';
 

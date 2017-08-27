@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { Container, Content, Spinner } from 'native-base';
 import PlayerInfo from '../components/PlayerInfo';
 import PlayerHistory from '../components/PlayerHistory';
