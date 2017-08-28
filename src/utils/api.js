@@ -6,7 +6,8 @@ const api = {
   getPlayers: getPlayers,
   getPlayerRankings: getPlayerRankings,
   getPlayerDetail: getPlayerDetail,
-  getTrophies: getTrophies
+  getTrophies: getTrophies,
+  getTrophiesDetail: getTrophiesDetail
 };
 
 function getLeagues() {
@@ -72,6 +73,18 @@ function getPlayerDetail(id) {
 
 function getTrophies() {
   const url = `${apiUrl}/trophies`;
+  
+  return fetch(url, { method: 'GET'}).then(res => {
+    if (!res.ok) {
+      throw new Error();
+    }
+
+    return res.json();
+  });
+}
+
+function getTrophiesDetail(id) {
+  const url = `${apiUrl}/trophies/${id}`;
   
   return fetch(url, { method: 'GET'}).then(res => {
     if (!res.ok) {
