@@ -75,20 +75,20 @@ const styles = StyleSheet.create({
     paddingLeft: 5,
     paddingRight: 15,
     marginLeft: 0,
-    borderColor: '#aaa'
+    borderColor: '#e0e2db'
   },
   itemText: {
-    color: '#1C1C1C',
+    color: '#191716',
     fontSize: 14
   },
   itemTextNote: {
-    color: '#878787',
+    color: '#beb7a4',
     fontSize: 12,
     fontWeight: '400',
     marginTop: 2
   },
   listItemHeader: {
-    backgroundColor: '#1452E3',
+    backgroundColor: '#e6af2e',
     paddingTop: 17,
     paddingBottom: 19,
     paddingLeft: 15,

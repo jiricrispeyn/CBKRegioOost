@@ -24,7 +24,7 @@ class LeagueAddresses extends Component {
                   <Text style={styles.itemText}>{item.name}</Text>
                   <Text note style={styles.itemTextNote}>{item.place}</Text>
                   <Text note style={styles.itemTextNote}>{item.address}</Text>
-                  <Text note style={[styles.itemTextNote, { color: '#1C56FF' }]}>{item.phone}</Text>
+                  <Text note style={[styles.itemTextNote, { color: '#e6af2e' }]}>{item.phone}</Text>
                 </Body>
               </ListItem>
             }>
@@ -56,14 +56,14 @@ const styles = StyleSheet.create({
     paddingLeft: 20,
     paddingRight: 20,
     marginLeft: 0,
-    borderColor: '#aaa',
+    borderColor: '#e0e2db',
   },
   itemText: {
-    color: '#333',
+    color: '#191716',
     fontSize: 17
   },
   itemTextNote: {
-    color: '#878787',
+    color: '#beb7a4',
     fontSize: 12,
     fontWeight: '400',
     marginTop: 2

@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
     paddingLeft: 5,
     paddingRight: 15,
     marginLeft: 0,
-    borderColor: '#aaa'
+    borderColor: '#e0e2db'
   },
   listItemDivider: {
     backgroundColor: '#F3F3F3',
@@ -107,17 +107,17 @@ const styles = StyleSheet.create({
     width: 50
   },
   itemText: {
-    color: '#1C1C1C',
+    color: '#191716',
     fontSize: 14
   },
   itemTextNote: {
-    color: '#878787',
+    color: '#beb7a4',
     fontSize: 12,
     fontWeight: '400',
     marginTop: 2
   },
   star: {
-    color: '#1452E3',
+    color: '#e6af2e',
     fontSize: 20
   }
 });

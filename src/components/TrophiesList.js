@@ -53,10 +53,10 @@ const styles = StyleSheet.create({
     paddingLeft: 20,
     paddingRight: 20,
     marginLeft: 0,
-    borderColor: '#AAAAAA',
+    borderColor: '#e0e2db',
   },
   itemText: {
-    color: '#333333',
+    color: '#191716',
     fontSize: 12
   }
 });

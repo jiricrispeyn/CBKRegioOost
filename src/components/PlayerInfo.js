@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
     paddingLeft: 5,
     paddingRight: 15,
     marginLeft: 0,
-    borderColor: '#aaa'
+    borderColor: '#e0e2db'
   },
   listItemDivider: {
     backgroundColor: '#F3F3F3',
@@ -95,12 +95,12 @@ const styles = StyleSheet.create({
   itemTextBody: {
     fontSize: 12,
     fontWeight: '400',
-    color: '#B0B0B0'
+    color: '#191716'
   },
   itemTextRight: {
     fontSize: 17,
     fontWeight: '400',
-    color: '#333'
+    color: '#beb7a4'
   }
 });
 

@@ -34,10 +34,10 @@ const styles = StyleSheet.create({
     height: 0
   },
   tabStyle: {
-    backgroundColor: '#232323'
+    backgroundColor: '#191716'
   },
   activeTabStyle: {
-    backgroundColor: '#fff'
+    backgroundColor: '#e6af2e'
   },
   textStyle: {
     fontSize: 12,
