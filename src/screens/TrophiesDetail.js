@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet } from 'react-native';
 import { Container, Content, Text } from 'native-base';
+import TrophiesDetailList from '../components/TrophiesDetailList';
 
 class TrophiesDetail extends Component {
   state = {  }
@@ -8,7 +9,7 @@ class TrophiesDetail extends Component {
     return (
       <Container style={styles.container}>
         <Content>
-          <Text>TrophiesDetail</Text>
+          <TrophiesDetailList id={this.props.navigation.state.params.id} />
         </Content>
       </Container>
     );
