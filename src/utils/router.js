@@ -15,21 +15,21 @@ import TrophiesDetail from '../screens/TrophiesDetail';
 const stackNavigatorConfig = {
   headerBackTitle: null,
   headerStyle: {
-    backgroundColor: '#fff',
+    backgroundColor: '#3d348b',
     height: 65,
-    borderColor: '#ccc'
+    borderBottomWidth: 0
   },
   headerTitleStyle: {
     fontSize: 17,
     fontWeight: '400',
-    color: '#333'
+    color: '#fff'
   },
   headerBackTitleStyle: {
     fontSize: 12,
     fontWeight: '400',
-    color: '#333'
+    color: '#fff'
   },
-  headerTintColor: '#000'
+  headerTintColor: '#fff'
 };
 
 const HomeTab = StackNavigator({
@@ -191,15 +191,15 @@ const StacksInTabs = TabNavigator({
   animationEnabled: false,
   swipeEnabled: false,
   tabBarOptions: {
-    activeTintColor: '#000',
-    inactiveTintColor: '#B0B0B0',
+    activeTintColor: '#fff',
+    inactiveTintColor: '#8a85b9',
     labelStyle: {
       fontSize: 9
     },
     style: {
-      backgroundColor: '#fff',
+      backgroundColor: '#3d348b',
       height: 60,
-      borderColor: '#CCCCCC'
+      borderTopWidth: 0
     }
   }
 });
