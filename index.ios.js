@@ -8,13 +8,15 @@ import React, { Component } from 'react';
 import {
   AppRegistry,
   StyleSheet,
-  Text,
-  View
+  View,
+  StatusBar
 } from 'react-native';
 import StacksInTabs from './src/utils/router';
 
 export default class CBKRegioOost extends Component {
   render() {
+    StatusBar.setBarStyle('light-content');
+    
     return (
       <StacksInTabs />
     );
