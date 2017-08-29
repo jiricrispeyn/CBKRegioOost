@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { Body, Left, Right, List, ListItem, Text, Badge, Spinner } from 'native-base';
 import _ from 'lodash';
 import * as api from '../utils/api';
@@ -52,6 +52,8 @@ class PlayerRankingsList extends Component {
     this.props.navigation.navigate('PlayersDetail', {id: id});    
   }
   getPositionStyle(position) {
+    let positionItem;
+
     if (_.inRange(position, 1, 4)) {
       let backgroundColor;
 
@@ -66,15 +68,17 @@ class PlayerRankingsList extends Component {
           return;
       }
 
-      return (
-        <Badge style={{ backgroundColor: backgroundColor }}>
+      positionItem = (
+        <Badge style={{ backgroundColor: backgroundColor, alignSelf: 'center' }}>
           <Text style={{ fontSize: 14 }}>{position}</Text>
         </Badge>
       );
+    } else {
+      positionItem = <Text style={[styles.itemText, { marginLeft: 0 }]}>{position}</Text>;
     }
 
     return (
-      <Text style={styles.itemText}>{position}</Text>
+      <View style={{ flex: 1, alignItems: 'center' }}>{positionItem}</View>
     );
   }
 }
@@ -86,11 +90,12 @@ const styles = StyleSheet.create({
     paddingLeft: 5,
     paddingRight: 15,
     marginLeft: 0,
-    borderColor: '#3d348b'
+    borderColor: '#e0e2db'
   },
   left: {
     flex: 0,
-    width: 40
+    width: 40,
+    flexDirection: 'row'
   },
   body: {
     flexDirection: 'row',
