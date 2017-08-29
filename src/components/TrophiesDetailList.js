@@ -30,7 +30,7 @@ class TrophiesDetailList extends Component {
                 <View style={styles.resultWrapper}>
                   <Text style={styles.gameResultText}>{game.result}</Text>
                 </View>
-                <Text>{game.test_game_result}</Text>
+                <Text>{game.result_test_game}</Text>
               </Col>
               <Col>
                 <Text numberOfLines={1} style={styles.itemText}>{game.away.club}</Text>
