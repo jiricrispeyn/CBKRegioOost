@@ -31,23 +31,23 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff'
   },
   tabBarUnderlineStyle: {
-    height: 0
+    backgroundColor: '#3D348B'
   },
   tabStyle: {
-    backgroundColor: '#191716'
+    backgroundColor: '#fff'
   },
   activeTabStyle: {
-    backgroundColor: '#e6af2e'
+    backgroundColor: '#fff'
   },
   textStyle: {
     fontSize: 12,
     fontWeight: '400',
-    color: '#fff'
+    color: '#191716'
   },
   activeTextStyle: {
     fontSize: 12,
     fontWeight: '400',
-    color: '#323232'
+    color: '#191716'
   }
 });
 
