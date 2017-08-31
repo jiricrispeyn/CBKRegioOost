@@ -49,7 +49,7 @@ class PlayerInfo extends Component {
             <Text style={styles.itemTextBody}>AFDELING</Text>
           </Body>
           <Right style={styles.right}>
-            <Text style={styles.itemTextRight}>{this.state.info.division}</Text>
+            <Text style={styles.itemTextRight}>{this.state.info.league}</Text>
           </Right>
         </ListItem>
         <ListItem  style={styles.listItem}>

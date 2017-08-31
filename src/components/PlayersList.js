@@ -17,7 +17,7 @@ class PlayersList extends Component {
 
     const playersList = this.state.clubs.map(club => {
       const itemHeader = <ListItem itemHeader style={styles.listItemHeader}>
-          <Text style={styles.listItemHeaderText}>{club.name}</Text>
+          <Text style={styles.listItemHeaderText}>{club.club}</Text>
         </ListItem>;
 
       const players = club.players.map(player => {
@@ -60,7 +60,7 @@ class PlayersList extends Component {
     return _.chain(players)
       .groupBy('club')
       .toPairs()
-      .map(club => _.zipObject(['name', 'players'], club))
+      .map(club => _.zipObject(['club', 'players'], club))
       .value();
   }
   goToDetail(id) {

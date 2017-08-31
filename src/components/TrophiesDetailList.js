@@ -24,7 +24,7 @@ class TrophiesDetailList extends Component {
               <Col>
                 <Text numberOfLines={1} style={styles.itemText}>{game.home.club}</Text>
                 <Text numberOfLines={1} note style={styles.itemTextNote}>{game.home.city}</Text>
-                <Text note style={styles.itemTextNote}>Afdeling {game.home.division}</Text>
+                <Text note style={styles.itemTextNote}>Afdeling {game.home.league}</Text>
               </Col>
               <Col style={styles.scoreCol}>
                 <View style={styles.resultWrapper}>
@@ -35,7 +35,7 @@ class TrophiesDetailList extends Component {
               <Col>
                 <Text numberOfLines={1} style={styles.itemText}>{game.away.club}</Text>
                 <Text numberOfLines={1} note style={styles.itemTextNote}>{game.away.city}</Text>
-                <Text note style={styles.itemTextNote}>Afdeling {game.away.division}</Text>
+                <Text note style={styles.itemTextNote}>Afdeling {game.away.league}</Text>
               </Col>
             </Grid>
           </ListItem>
@@ -55,7 +55,7 @@ class TrophiesDetailList extends Component {
   fetchData() {
     api.getTrophiesDetail(this.props.id).then(
       res => this.setState({
-        trophies: res
+        trophies: res.rounds
       }),
       err => console.log(err)
     );

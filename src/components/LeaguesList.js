@@ -17,8 +17,8 @@ class LeaguesList extends Component {
     return (
       <List dataArray={this.state.leagues}
         renderRow={item => 
-          <ListItem button onPress={() => {this.goToDetail(item.text)}} style={styles.listItem}>
-            <Text style={styles.itemText}>{item.text}</Text>
+          <ListItem button onPress={() => {this.goToDetail(item.id)}} style={styles.listItem}>
+            <Text style={styles.itemText}>{item.id}</Text>
           </ListItem>
         }>
       </List>

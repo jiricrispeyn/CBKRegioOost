@@ -15,7 +15,7 @@ class PlayerHistory extends Component {
           </Left>
           <Body>
             <Text style={styles.itemText}>{item.club} {this.getChampionStars(item.autumn_champion, item.champion)}</Text>
-            {this.getDivision(item.division, item.position)}
+            {this.getLeague(item.league, item.position)}
           </Body>
           <Right>
             <Text style={styles.itemText}>{item.ranking}</Text>
@@ -67,12 +67,12 @@ class PlayerHistory extends Component {
 
     return;
   }
-  getDivision(division, position) {
+  getLeague(league, position) {
     if (position === 0) {
-      return <Text note style={styles.itemTextNote}>Afdeling {division}</Text>;
+      return <Text note style={styles.itemTextNote}>Afdeling {league}</Text>;
     }
 
-    return <Text note style={styles.itemTextNote}>{position}e plaats in afdeling {division}</Text>;
+    return <Text note style={styles.itemTextNote}>{position}e plaats in afdeling {league}</Text>;
   }
   getElo(elo) {
     if (elo > 0) {

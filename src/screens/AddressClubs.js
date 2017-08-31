@@ -21,7 +21,7 @@ class LeagueAddresses extends Component {
             renderRow={item => 
               <ListItem style={styles.listItem}>
                 <Body>
-                  <Text style={styles.itemText}>{item.name}</Text>
+                  <Text style={styles.itemText}>{item.club}</Text>
                   <Text note style={styles.itemTextNote}>{item.place}</Text>
                   <Text note style={styles.itemTextNote}>{item.address}</Text>
                   <Text note style={[styles.itemTextNote, { color: '#e6af2e' }]}>{item.phone}</Text>
