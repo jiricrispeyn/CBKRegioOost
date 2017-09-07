@@ -11,7 +11,7 @@ class PlayersList extends Component {
   render() {
     if (!this.state.clubs) {
       return (
-        <Spinner />
+        <Spinner color="#3D348B" />
       );
     }
 

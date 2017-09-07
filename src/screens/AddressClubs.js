@@ -9,7 +9,7 @@ class LeagueAddresses extends Component {
     if (!this.state.addresses) {
       return (
         <Container style={styles.container}>
-          <Spinner />
+          <Spinner color="#3D348B" />
         </Container>
       );
     }

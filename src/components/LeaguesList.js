@@ -10,7 +10,7 @@ class LeaguesList extends Component {
   render() {
     if (!this.state.leagues) {
       return (
-        <Spinner />
+        <Spinner color="#3D348B" />
       );
     }
 

@@ -14,7 +14,7 @@ class PlayersDetail extends Component {
   render() {
     if (!this.state.isLoaded) {
       return (
-        <Spinner />
+        <Spinner color="#3D348B" />
       );
     }
 

@@ -11,7 +11,7 @@ class TrophiesList extends Component {
   render() {
     if (!this.state.trophies) {
       return (
-        <Spinner />
+        <Spinner color="#3D348B" />
       );
     }
 

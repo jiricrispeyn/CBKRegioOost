@@ -9,7 +9,7 @@ class PlayerRankingsList extends Component {
   render() {
     if (!this.state.players) {
       return (
-        <Spinner />
+        <Spinner color="#3D348B" />
       );
     }
     
