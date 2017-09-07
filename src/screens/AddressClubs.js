@@ -38,8 +38,11 @@ class LeagueAddresses extends Component {
   }
   fetchData() {
     api.getAddresses(this.props.navigation.state.params.league).then(
+      res => this.filterAddresses(res.addresses),
+      err => console.log(err)
+    ).then(
       res => this.setState({
-        addresses: res.addresses
+        addresses: res
       }),
       err => console.log(err)
     );
