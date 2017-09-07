@@ -22,9 +22,9 @@ class LeagueAddresses extends Component {
               <ListItem style={styles.listItem}>
                 <Body>
                   <Text style={styles.itemText}>{item.club}</Text>
-                  <Text note style={styles.itemTextNote}>{item.place}</Text>
-                  <Text note style={styles.itemTextNote}>{item.address}</Text>
-                  <Text note style={[styles.itemTextNote, { color: '#e6af2e' }]}>{item.phone}</Text>
+                  {this.renderPlace(item.place)}
+                  {this.renderAddress(item.address)}
+                  {this.renderPhone(item.phone)}
                 </Body>
               </ListItem>
             }>
@@ -43,6 +43,30 @@ class LeagueAddresses extends Component {
       }),
       err => console.log(err)
     );
+  }
+  filterAddresses(addresses) {
+    return addresses.filter(address => !address.club || address.club !== 'BYE - VRIJ');
+  }
+  renderPlace(place) {
+    if (place) {
+      return <Text note style={styles.itemTextNote}>{place}</Text>;
+    }
+
+    return;
+  }
+  renderAddress(address) {
+    if (address) {
+      return <Text note style={styles.itemTextNote}>{address}</Text>;
+    }
+
+    return;
+  }
+  renderPhone(phone) {
+    if (phone) {
+      return <Text note style={[styles.itemTextNote, { color: '#e6af2e' }]}>{phone}</Text>;
+    }
+
+    return;
   }
 }
 
