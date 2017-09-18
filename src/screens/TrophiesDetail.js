@@ -9,7 +9,7 @@ class TrophiesDetail extends Component {
     return (
       <Container style={styles.container}>
         <Content>
-          <TrophiesDetailList id={this.props.navigation.state.params.id} />
+          <TrophiesDetailList navigation={this.props.navigation} id={this.props.navigation.state.params.id} />
         </Content>
       </Container>
     );
