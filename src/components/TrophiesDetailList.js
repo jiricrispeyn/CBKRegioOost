@@ -19,7 +19,7 @@ class TrophiesDetailList extends Component {
 
       const games = trophy.games.map(game => {
         return (
-          <ListItem style={styles.listItem}>
+          <ListItem button onPress={() => {this.goToDetail(game.scoresheet_id)}} style={styles.listItem}>
             <Grid>
               <Col>
                 <Text numberOfLines={1} style={styles.itemText}>{game.home.club}</Text>
@@ -59,6 +59,13 @@ class TrophiesDetailList extends Component {
       }),
       err => console.log(err)
     );
+  }
+  goToDetail(scoresheet) {
+    if (scoresheet === null) {
+      return;
+    }
+    
+    this.props.navigation.navigate('Scoresheet', { type: 'beker', subtype: this.props.id, scoresheet: scoresheet });    
   }
 }
 
