@@ -11,6 +11,7 @@ import Leagues from '../screens/Leagues';
 import LeaguesDetail from '../screens/LeaguesDetail';
 import Trophies from '../screens/Trophies';
 import TrophiesDetail from '../screens/TrophiesDetail';
+import Scoresheet from '../screens/Scoresheet';
 
 const stackNavigatorConfig = {
   headerBackTitle: null,
@@ -129,6 +130,13 @@ const TrophiesTab = StackNavigator({
     navigationOptions: ({ navigation }) => ({
       title: navigation.state.params.text
     })
+  },
+  Scoresheet: {
+    screen: Scoresheet,
+    path: '/:id/:scoresheet',
+    navigationOptions: {
+      title: 'Wedstrijdblad'
+    }
   }
 }, {
   navigationOptions: stackNavigatorConfig
