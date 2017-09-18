@@ -7,7 +7,8 @@ const api = {
   getPlayerRankings: getPlayerRankings,
   getPlayerDetail: getPlayerDetail,
   getTrophies: getTrophies,
-  getTrophiesDetail: getTrophiesDetail
+  getTrophiesDetail: getTrophiesDetail,
+  getScoresheet: getScoresheet
 };
 
 function getLeagues() {
@@ -85,6 +86,18 @@ function getTrophies() {
 
 function getTrophiesDetail(id) {
   const url = `${apiUrl}/trophies/${id}`;
+  
+  return fetch(url, { method: 'GET'}).then(res => {
+    if (!res.ok) {
+      throw new Error();
+    }
+
+    return res.json();
+  });
+}
+
+function getScoresheet(type, subtype, id) {
+  const url = `${apiUrl}/scoresheet/${type}/${subtype}/${id}`;
   
   return fetch(url, { method: 'GET'}).then(res => {
     if (!res.ok) {
